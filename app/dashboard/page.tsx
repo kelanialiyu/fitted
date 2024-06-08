@@ -14,8 +14,7 @@ type User = {
    accessToken: string;
 }
 const Page =async() => {
-   const user = await auth();
-   console.log(cookies)
+   const user = await auth()
    const fetchUserRepo = async () => {
       const response = await fetch("https://api.github.com/user/repos", {
          headers: {
